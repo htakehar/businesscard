@@ -3,4 +3,28 @@
 <a href="https://www.facebook.com/hidenori.takehara.7">Facebook</a><br>
 <a href="https://www.linkedin.com/in/hidenori-takehara-028874189/">LinkedIn</a><br>
 <a href="https://www.instagram.com/takeharahidenori">Instagram</a><br>
+<a href="https://discordapp.com/users/572938458390069278">Discord</a><br>
 <a href="https://youtrust.jp/users/7f0ec3590ade1bf41c6085956ee3f195">YOUTRUST</a><br>
+<script>
+const deviceUA = window.navigator.userAgent.toLowerCase();
+const is_iPhone = deviceUA.indexOf('iphone') != -1 && deviceUA.indexOf('ipod') == -1; // iPhone (ここでは iPod touch を除外)
+const is_iPad = deviceUA.indexOf('ipad') != -1 || deviceUA.indexOf('macintosh') > -1 && 'ontouchend' in document; // iPad (旧 iOS, 新 iPad OS とも
+const is_Android = deviceUA.indexOf('android') != -1; // Android
+if(is_iPhone || is_iPad) { // iPhone, iPad
+  fbPageUrl = "fb://page?id=440321889344017";
+} 
+else if(is_Android) { // Android
+  fbPageUrl = "fb://page/440321889344017";
+}
+else { // PC, iPod touch
+  fbPageUrl = "https://www.facebook.com/hidenori.takehara.7/";
+}
+function fbPageLink() {
+  if(is_iPhone || is_iPad || is_Android) { // iPhone, iPad, Android なら
+    location.href = fbPageUrl; // アプリで起動する
+  } else { // PC, iPod touch なら
+    open( fbPageUrl, "_blank" ) ; // ブラウザ別タブで開く
+  }
+};
+<a href="javascript:void(0);" onclick="fbPageLink()">【Facebook】</a>
+</script>
