@@ -11,10 +11,10 @@ const is_iPhone = deviceUA.indexOf('iphone') != -1 && deviceUA.indexOf('ipod') =
 const is_iPad = deviceUA.indexOf('ipad') != -1 || deviceUA.indexOf('macintosh') > -1 && 'ontouchend' in document; // iPad (旧 iOS, 新 iPad OS とも
 const is_Android = deviceUA.indexOf('android') != -1; // Android
 if(is_iPhone || is_iPad) { // iPhone, iPad
-  fbPageUrl = "fb://page?id=100000986298724";
+  fbPageUrl = "fb://profile?id=100000986298724";
 } 
 else if(is_Android) { // Android
-  fbPageUrl = "fb://page/100000986298724";
+  fbPageUrl = "fb://profile/100000986298724";
 }
 else { // PC, iPod touch
   fbPageUrl = "https://www.facebook.com/hidenori.takehara.7/";
