@@ -24,7 +24,7 @@ html{
      }
   }
 
-<style>.div {
+.div {
     display: flex;
     max-width: 600px;
     flex-direction: column;
@@ -490,5 +490,3 @@ html{
     width: 200px;
     max-width: 100%;
 }
-
-</style>
