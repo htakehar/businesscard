@@ -22,7 +22,7 @@ html{
          color:red;
      }
   }
-}
+
 .div {
     display: flex;
     max-width: 600px;
@@ -488,4 +488,5 @@ html{
     object-position: center;
     width: 200px;
     max-width: 100%;
+}
 }
