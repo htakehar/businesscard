@@ -1,3 +1,14 @@
+<script>
+window.matchMedia('(orientation: landscape)').addEventListener('change', function(e) {
+    if(e.matches) {
+      // デバイスが横向きになった時、処理を実行する
+      window.location.replace("./index_l.html");
+    } else {
+      // デバイスが縦向きになった時、処理を実行する
+      //何もしない
+    }
+});
+</script>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -59,8 +70,8 @@
       <div class="column-3">
         <a href="javascript:void(0);" onclick="fbPageLink()">
           <img loading="lazy" srcset="img/facebook.png" class="img-8" />
+        </a>
       </div>
-      </a>
       <div class="column-4">
         <a href="https://twitter.com/h_takehara">
           <img loading="lazy" srcset="img/x.png" class="img-9" />

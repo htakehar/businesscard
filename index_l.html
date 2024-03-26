@@ -1,0 +1,123 @@
+<script>
+  window.matchMedia('(orientation: landscape)').addEventListener('change', function (e) {
+    if (e.matches) {
+      // デバイスが横向きになった時、処理を実行する
+      //何もしない
+    } else {
+      // デバイスが縦向きになった時、処理を実行する
+      window.location.replace("./index.html");
+    }
+  });
+</script>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>businesscard</title>
+  <link rel="stylesheet" href="css/index_l.css">
+  <script src="js/index.js"></script>
+
+<body style="background-color:black;"></body>
+</head>
+<div class="div">
+  <div class="column-14">
+    <div class="column-12">
+      <div class="div-3">
+        <div class="div-4">
+          <div class="div-5">
+            <div class="div-6">
+              <div class="column">
+                <img loading="lazy" srcset="img/photo.jpg" class="img-4" />
+              </div>
+              <div class="column-2">
+                <div class="font-size-S">
+                  スクラムマスター
+                  <br />
+                  アジャイルコーチ
+                  <br />
+                  <br />
+                  【趣味】
+                  <br />
+                  ゲーム
+                  <br />
+                  ガジェット
+                  <br />
+                  爬虫類
+                  <br />
+                  <br />
+                  📍兵庫県→東京都
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="font-size-M">タケハラ ヒデノリ</div>
+          <div class="font-size-L">竹原 秀紀</div>
+        </div>
+        <div class="div-10">
+          S
+          <br />
+          <br />
+          N
+          <br />
+          <br />
+          S
+        </div>
+      </div>
+    </div>
+    <div class="column-13">
+      <div class="div-2">
+        <div class="column-3">
+          <a href="javascript:void(0);" onclick="fbPageLink()">
+            <img loading="lazy" srcset="img/facebook.png" class="img" />
+          </a>
+        </div>
+        <div class="column-4">
+          <a href="https://twitter.com/h_takehara">
+            <img loading="lazy" srcset="img/x.png" class="img-2" />
+          </a>
+        </div>
+        <div class="column-5">
+          <a href="https://www.linkedin.com/in/hidenori-takehara-028874189/">
+            <img loading="lazy" srcset="img/linkedin.png" class="img-3" />
+          </a>
+        </div>
+      </div>
+      <div class="div-2">
+        <div class="column-6">
+          <a href="https://bsky.app/profile/htakehar.bsky.social">
+            <img loading="lazy" srcset="img/bluesky.png" class="img" />
+          </a>
+        </div>
+        <div class="column-7">
+          <a href="https://www.instagram.com/takeharahidenori">
+            <img loading="lazy" srcset="img/instagram.png" class="img-5" />
+          </a>
+        </div>
+        <div class="column-8">
+          <a href="https://www.threads.net/@takeharahidenori">
+            <img loading="lazy" srcset="img/threads.png" class="img-6" />
+          </a>
+        </div>
+      </div>
+      <div class="div-2">
+        <div class="div-12">
+          <div class="column-9">
+            <a href="https://youtrust.jp/users/7f0ec3590ade1bf41c6085956ee3f195">
+              <img loading="lazy" srcset="img/youtrust.png" class="img-7" />
+            </a>
+          </div>
+          <div class="column-10">
+            <a href="https://discordapp.com/users/572938458390069278">
+              <img loading="lazy" srcset="img/discord.png" class="img-8" />
+            </a>
+          </div>
+          <div class="column-11">
+            <img loading="lazy" srcset="..." class="img-9" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
